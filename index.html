@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orgasmic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-area">
+            <div class="logo">Orgasmic</div>
+            <ul class="menu-area">
+                <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
+                <li><a href="#Produccion">Producción</a></li>
+                <li><a href="#Productos">Productos</a></li>
+            </ul>
+        </div>
+        <div class="welcome-text">
+            <h2>Orgasmic</h2>
+            <button class="btn"><strong>Chocolates Artesanales</strong></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="SobreNosotros">
+            <div class="section-container">
+                <div class="section-content">
+                    <h2>Sobre Nosotros</h2>
+                    <div class="sobre-info">
+                        <p>
+                            En Orgasmic Chocolates, somos un apasionado equipo de cinco personas dedicadas a la creación de chocolates artesanales únicos y de alta calidad. 
+                        </p>
+                        <p>
+                            Nuestro amor por el chocolate nos inspira a ofrecerte experiencias dulces memorables, utilizando solo los mejores ingredientes de fuentes sostenibles.
+                        </p>
+                        <p>
+                            Cada bocado es una celebración de sabor y pasión. ¡Descubre nuestros chocolates y déjate llevar por un mundo de delicias!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Produccion">
+            <div class="section-container">
+                <div class="section-content">
+                    <h2>Producción</h2>
+                    <div class="produccion-info">
+                        <div class="info-text">
+                            <h3>Ingredientes de Calidad</h3>
+                            <p>Nuestros chocolates son elaborados con ingredientes de la más alta calidad, provenientes de fuentes sostenibles. Utilizamos cacao puro, frutas frescas y especias seleccionadas para crear sabores únicos y sorprendentes.</p>
+                        </div>
+                        <div class="info-text">
+                            <h3>Proceso Artesanal</h3>
+                            <p>Cada bocado es el resultado de un cuidadoso proceso de selección, mezcla y elaboración. Desde la recolección del cacao hasta el empaque final, nuestro equipo se dedica a garantizar que cada producto sea una experiencia sensorial inigualable.</p>
+                        </div>
+                        <div class="info-text">
+                            <h3>Compromiso con la Calidad</h3>
+                            <p>Nos dedicamos a ofrecer productos de la más alta calidad. Si bien nuestras bandejas y bolsas no son reciclables, trabajamos arduamente para garantizar que nuestros chocolates sean elaborados con ingredientes responsables y en un entorno que prioriza la calidad y el sabor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel" id="carruselProduccion">
+                    <div class="carousel-images">
+                        <img src="img/oreo.jpg" alt="Imagen 1">
+                        <img src="img/produccion1.jpg" alt="Imagen 2">
+                        <img src="img/produccion2.jpg" alt="Imagen 3">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1, 'carruselProduccion')">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1, 'carruselProduccion')">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Productos">
+            <div class="section-container">
+                <div class="section-content">
+                    <h2>Productos</h2>
+                    <div class="productos-info">
+                        <div class="info-text">
+                            <h3>Bandeja de 6 Productos</h3>
+                            <p>Disfruta de una selección exquisita de seis de nuestros chocolates más populares. Esta bandeja es perfecta para compartir o para un capricho personal. Cada bocado está lleno de sabor y amor por el chocolate.</p>
+                        </div>
+                        <div class="info-text">
+                            <h3>Bandeja de 10 Productos</h3>
+                            <p>La bandeja ideal para los verdaderos amantes del chocolate. Con diez deliciosos chocolates, esta opción te permitirá explorar nuestra variedad de sabores y texturas. ¡Una experiencia inolvidable!</p>
+                        </div>
+                        <div class="info-text">
+                            <h3>Calidad Artesanal</h3>
+                            <p>Cada uno de nuestros productos es elaborado a mano, asegurando que cada chocolate no solo sea delicioso, sino también visualmente atractivo. Nos enorgullecemos de ofrecer una experiencia gourmet en cada compra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel" id="carruselProductos">
+                    <div class="carousel-images">
+                        <img src="img/Chocolates1.jpg" alt="Producto 1">
+                        <img src="img/Chocolates2.jpg" alt="Producto 2">
+                        <img src="img/Chocolates3.jpg" alt="Producto 3">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1, 'carruselProductos')">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1, 'carruselProductos')">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="comprar">
+        <h2>Formulario de Compra</h2>
+        <form id="purchaseForm">
+            <div class="campo">
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" required>
+            </div>
+            <div class="campo">
+                <label for="emailCliente">Email:</label>
+                <input type="email" id="emailCliente" name="emailCliente" required>
+            </div>
+            <div class="campo">
+                <label for="bandeja">Selecciona tu bandeja:</label>
+                <select id="bandeja" name="bandeja" required>
+                    <option value="">--Selecciona--</option>
+                    <option value="bandeja6" data-precio="4500">Bandeja de 6 productos - $4500</option>
+                    <option value="bandeja10" data-precio="7800">Bandeja de 10 productos - $7800</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="tarjetaCredito">Selecciona tu tarjeta de crédito:</label>
+                <select id="tarjetaCredito" name="tarjetaCredito" required>
+                    <option value="">--Selecciona--</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="americanexpress">American Express</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="numeroTarjeta">Número de tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+            </div>
+            <div class="campo">
+                <label for="fechaExpiracion">Fecha de expiración (MM/AA):</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required>
+            </div>
+            <div class="campo">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit">Comprar</button>
+        </form>
+        <div id="mensajeCompra" style="display:none;"></div>
+    </section>
+
+    <section class="social-icons">
+        <div class="icon-area">
+            <div class="icon">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©2024 Orgasmic Chocolates</p>
+    </footer>
+
+    <script>
+        let slideIndices = {
+            'carruselProduccion': 0,
+            'carruselProductos': 0
+        };
+
+        function showSlides(carousel) {
+            const slides = document.querySelectorAll(`#${carousel} .carousel-images img`);
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndices[carousel]) ? 'block' : 'none';
+            });
+        }
+
+        function moveSlide(n, carousel) {
+            slideIndices[carousel] += n;
+            const slides = document.querySelectorAll(`#${carousel} .carousel-images img`);
+            if (slideIndices[carousel] >= slides.length) {
+                slideIndices[carousel] = 0;
+            }
+            if (slideIndices[carousel] < 0) {
+                slideIndices[carousel] = slides.length - 1;
+            }
+            showSlides(carousel);
+        }
+
+        document.getElementById("purchaseForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Captura los valores del formulario
+            const nombre = document.getElementById("nombreCliente").value;
+            const email = document.getElementById("emailCliente").value;
+            const bandejaSeleccionada = document.getElementById("bandeja");
+            const bandejaPrecio = bandejaSeleccionada.options[bandejaSeleccionada.selectedIndex].dataset.precio;
+
+            // Muestra un mensaje de éxito
+            const mensaje = document.getElementById("mensajeCompra");
+            mensaje.style.display = "block";
+            mensaje.textContent = `Gracias, ${nombre}. Has comprado una bandeja por $${bandejaPrecio}. Un correo de confirmación será enviado a ${email}.`;
+
+            // Limpia el formulario
+            this.reset();
+        });
+
+        // Mostrar los slides al cargar
+        showSlides('carruselProduccion');
+        showSlides('carruselProductos');
+    </script>
+
+</body>
+
+</html>
